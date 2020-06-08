@@ -575,7 +575,7 @@ $$
  \left[
  \begin{matrix}
    x_1 \\
-   x_2 \\
+   y_1 \\
   \end{matrix}
   \right] \tag{6.11}
 $$
@@ -642,7 +642,7 @@ $$
  \left[
  \begin{matrix}
    x_1 \\
-   x_2 \\
+   y_1 \\
   \end{matrix}
   \right] = \left[
  \begin{matrix}
@@ -656,7 +656,7 @@ $$
    \left[
  \begin{matrix}
    x_1 \\
-   x_2 \\
+   y_1 \\
   \end{matrix}
   \right] +   \left[
  \begin{matrix}
@@ -680,7 +680,7 @@ $$
    \left[
  \begin{matrix}
    x_1 \\
-   x_2 \\
+   y_1 \\
   \end{matrix}
   \right] + \left[
  \begin{matrix}
@@ -694,7 +694,7 @@ $$
 \left[
  \begin{matrix}
    x_0 \\
-   x_0 \\
+   y_0 \\
   \end{matrix}
   \right] =\left[
  \begin{matrix}
@@ -704,7 +704,7 @@ $$
    \left[
  \begin{matrix}
    x_1 \\
-   x_2 \\
+   y_1 \\
   \end{matrix}
   \right] + \left[
  \begin{matrix}
@@ -718,7 +718,7 @@ $$
 \left[ 
 \begin{matrix}   
 x_0 \\
-x_0 \\
+y_0 \\
 1  \end{matrix}
 \right] 
 =
@@ -732,7 +732,7 @@ r_{xy} &r_{yy} & p_y
 \left[ 
 \begin{matrix}   
 x_1 \\   
-x_2 \\ 
+y_1 \\ 
 1  
 \end{matrix}  
 \right]\tag{6.15}
@@ -786,6 +786,8 @@ ax+by+cz+d =0   \tag{7.2}
 $$
 其中$(a,b,c)$ 为该平面的法矢方向（垂直于平面的方向）。
 
+![平面](.\figure\平面.svg)
+
 ### 7.2. 圆方程
 
 在二维平面上，圆是一个非常完美的图形。
@@ -807,6 +809,8 @@ $$
 r = \sqrt {(x-x_0)^2+(y-y_0)^2}    \Longleftrightarrow  r^2 = (x-x_0)^2+(y-y_0)^2 \tag{7.4}
 $$
 
+![圆](.\figure\圆.svg)
+
 ### 7.3. 球面方程
 
 球和圆的原理是一样的，只不过圆是二维平面上的，球是三维空间中的。
@@ -816,12 +820,63 @@ $$
 R = \sqrt {(x-x_0)^2+(y-y_0)^2+(z-z_0)^2 }    \Longleftrightarrow  R^2 = (x-x_0)^2+(y-y_0)^2+(z-z_0)^2 \tag{7.5}
 $$
 
+![球](.\figure\球.svg)
 
 ### 7.4. 柱面方程
 
+常见的柱面方程，通常是在3维空间中，3个坐标中有两个被约束在圆上，其他一个坐标被指定一个范围。
+$$
+\begin{cases}
+r^2 = (x-x_0)^2+(y-y_0)^2  \\
+0<z<d
+\end{cases}\tag{7.6}
+$$
+
+
+![柱面](\figure\柱面.svg)
+
 ### 7.5. 抛物线方程
+
+抛物线一半是在二维平面上研究。
+
+![抛物线](.\figure\抛物线.svg)
+
+其方程和二次函数方程一样。
+$$
+\begin{cases} 
+y=a \cdot x^2 +b \cdot x + c \\ a \neq 0
+\end{cases}\tag{7.7}
+$$
+
+
 ### 7.6. 椭圆方程
+
+椭圆方程，一般是在二维平面上研究。
+
+![椭圆](.\figure\椭圆.svg)
+
+椭圆方程如下：
+$$
+\begin{cases} 
+a^2 \cdot (x-x_0)^2 +b^2 \cdot (y-y_0)^2 = 1 \\ a\cdot b \neq 0
+\end{cases}\tag{7.8}
+$$
+
+
 ### 7.7. 双曲线方程
+
+双曲线方程，一般是在二维平面上研究。
+
+![双曲线](.\figure\双曲线.svg)
+
+双曲线方程如下：
+$$
+\begin{cases} 
+a^2 \cdot (x-x_0)^2 -b^2 \cdot (y-y_0)^2 = 1 \\ a\cdot b \neq 0
+\end{cases}\tag{7.9}
+$$
+
+
 ## 8. 旋转变换和一般的矩阵线性变换
 ## 9. 导数
 ## 10. 微分
